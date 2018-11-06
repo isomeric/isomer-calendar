@@ -45,12 +45,12 @@ This software package is a plugin module for HFOS.
           'hfos>=1.2.0',
           'icalendar>=4.0.1'
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     calendar=hfos.calendar.calendarmanager:CalendarManager
-    [hfos.schemata]
+    [isomer.schemata]
     event=hfos.calendar.event:Event
     calendar=hfos.calendar.calendar:Calendar
-    [hfos.management]
+    [isomer.management]
     icalimporter=hfos.calendar.importer.ical:ICALImporter
     """,
       test_suite="tests.main.main",

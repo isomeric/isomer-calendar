@@ -39,9 +39,9 @@ Provisions
 
 """
 
-from hfos.schemata.base import base_object
-from hfos.schemata.defaultform import editbuttons
-from hfos.schemata.geometry import GeometrySchema
+from isomer.schemata.base import base_object
+from isomer.schemata.defaultform import editbuttons
+from isomer.schemata.geometry import GeometrySchema
 
 CalendarSchema = base_object('calendar', all_roles='crew')
 

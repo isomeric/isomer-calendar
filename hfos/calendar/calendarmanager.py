@@ -30,11 +30,11 @@ Module: Calendar
 
 """
 
-from hfos.component import ConfigurableComponent, handler
-from hfos.database import objectmodels
-from hfos.logger import debug, error
-from hfos.events.system import authorizedevent
-from hfos.events.client import send
+from isomer.component import ConfigurableComponent, handler
+from isomer.database import objectmodels
+from isomer.logger import debug, error
+from isomer.events.system import authorized_event
+from isomer.events.client import send
 
 # from pprint import pprint
 
@@ -43,7 +43,7 @@ class CalendarManager(ConfigurableComponent):
     """
     Manages calendar resources.
     """
-    channel = "hfosweb"
+    channel = 'isomer-web'
 
     configprops = {}
 

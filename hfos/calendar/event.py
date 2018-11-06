@@ -39,9 +39,9 @@ Provisions
 
 """
 
-from hfos.schemata.base import uuid_object, base_object
-from hfos.schemata.defaultform import editbuttons, section, fieldset, lookup_field  # , collapsible
-from hfos.schemata.geometry import GeometrySchema
+from isomer.schemata.base import uuid_object, base_object
+from isomer.schemata.defaultform import editbuttons, section, fieldset, lookup_field  # , collapsible
+from isomer.schemata.geometry import GeometrySchema
 
 EventSchema = base_object('event', all_roles='crew')
 
