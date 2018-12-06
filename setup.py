@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -23,35 +23,35 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="hfos-calendar",
+setup(name="isomer-calendar",
       version="0.0.1",
-      description="hfos-calendar",
+      description="isomer-calendar",
 
-      author="Hackerfleet Community",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-calendar",
+      url="https://github.com/isomeric/isomer-calendar",
       license="GNU Affero General Public License v3",
-      namespace_packages=['hfos'],
+      namespace_packages=['isomer'],
       packages=find_packages(),
-      long_description="""HFOS - Calendar
-=================
+      long_description="""Isomer - Calendar
+===================
 
 A modern, opensource approach to calendar resource management.
 
-This software package is a plugin module for HFOS.
+This software package is a plugin module for Isomer.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0',
+          'isomer>=1.0.0',
           'icalendar>=4.0.1'
       ],
       entry_points="""[isomer.components]
-    calendar=hfos.calendar.calendarmanager:CalendarManager
+    calendar=isomer.calendar.calendarmanager:CalendarManager
     [isomer.schemata]
-    event=hfos.calendar.event:Event
-    calendar=hfos.calendar.calendar:Calendar
+    event=isomer.calendar.event:Event
+    calendar=isomer.calendar.calendar:Calendar
     [isomer.management]
-    icalimporter=hfos.calendar.importer.ical:ICALImporter
+    icalimporter=isomer.calendar.importer.ical:ICALImporter
     """,
       test_suite="tests.main.main",
       )

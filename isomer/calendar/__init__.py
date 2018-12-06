@@ -1,2 +1,2 @@
 # coding=utf-8
-"""HFOS Calendar backend module"""
+"""Isomer Calendar backend module"""

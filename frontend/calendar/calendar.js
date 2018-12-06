@@ -3,7 +3,7 @@
  * # -*- coding: UTF-8 -*-
  *
  * __license__ = """
- * Hackerfleet Operating System
+ * Isomer Application Framework
  * ============================
  * Copyright (C) 2011- 2018 riot <riot@c-base.org> and others.
  *
@@ -26,10 +26,10 @@
 
 /**
  * @ngdoc function
- * @name hfosFrontendApp.controller:CalendarCtrl
+ * @name isomerFrontendApp.controller:CalendarCtrl
  * @description
  * # CalendarCtrl
- * Controller of the hfosFrontendApp
+ * Controller of the isomerFrontendApp
  */
 
 class CalendarCtrl {
