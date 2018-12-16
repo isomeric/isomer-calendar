@@ -23,29 +23,30 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="isomer-calendar",
-      version="0.0.1",
-      description="isomer-calendar",
+setup(
+    name="isomer-calendar",
+    version="0.0.1",
+    description="isomer-calendar",
 
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/isomer-calendar",
-      license="GNU Affero General Public License v3",
-      namespace_packages=['isomer'],
-      packages=find_packages(),
-      long_description="""Isomer - Calendar
-===================
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/isomer-calendar",
+    license="GNU Affero General Public License v3",
+    namespace_packages=['isomer'],
+    packages=find_packages(),
+    long_description="""Isomer - Calendar
+=================
 
-A modern, opensource approach to calendar resource management.
+Calendar resource management module.
 
 This software package is a plugin module for Isomer.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.0.0',
-          'icalendar>=4.0.1'
-      ],
-      entry_points="""[isomer.components]
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0',
+        'icalendar>=4.0.1'
+    ],
+    entry_points="""[isomer.components]
     calendar=isomer.calendar.calendarmanager:CalendarManager
     [isomer.schemata]
     event=isomer.calendar.event:Event
@@ -53,5 +54,5 @@ This software package is a plugin module for Isomer.
     [isomer.management]
     icalimporter=isomer.calendar.importer.ical:ICALImporter
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
