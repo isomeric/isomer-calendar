@@ -242,7 +242,7 @@ class CalendarCtrl {
             self.scope.$broadcast('Resize', '<75%');
         };
 
-        this.edit_calendar = function(uuid) {
+        this.edit_calendar = function (uuid) {
             this.selected_calendar = uuid;
             self.scope.$broadcast('Changed.UUID', {eid: 'calendarEditor', uuid: self.selected_calendar});
         }
@@ -271,7 +271,7 @@ class CalendarCtrl {
 
         };
 
-        this.save_event= function(uuid) {
+        this.save_event = function (uuid) {
             console.log('[CALENDAR] Storing event:', uuid, self.events[uuid]);
             self.op.put('event', self.events[uuid]);
         };
@@ -303,7 +303,7 @@ class CalendarCtrl {
                 customButtons: {
                     upcoming: {
                         text: 'Upcoming',
-                        click: function() {
+                        click: function () {
                             self.state.go('app.upcoming', {calendars: 'all'});
                         }
                     }
@@ -334,12 +334,12 @@ class CalendarCtrl {
                 eventClick: this.alertOnEventClick,
                 eventDrop: this.alertOnDrop,
                 droppable: true, // this allows things to be dropped onto the calendar
-                drop: function(date, jsEvent, ui, resourceId ) {
+                drop: function (date, jsEvent, ui, resourceId) {
                     let friendScope = angular.element(this).scope();
                     let data = angular.copy(friendScope.$ctrl.dragdata);
                     console.log(date, data);
                     console.log(date._a);
-                    let real_date = new Date(date._a[0],date._a[1],date._a[2],date._a[3]+2,date._a[4],date._a[5],date._a[6]);
+                    let real_date = new Date(date._a[0], date._a[1], date._a[2], date._a[3] + 2, date._a[4], date._a[5], date._a[6]);
                     console.log('REAL:', real_date);
 
                     let delta = new Date(data.dtstart).getTime() - real_date.getTime();

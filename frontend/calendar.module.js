@@ -27,7 +27,7 @@ import uirouter from 'angular-ui-router';
 
 import './calendar/calendar.scss';
 
-import { routing } from './calendar.config.js';
+import {routing} from './calendar.config.js';
 
 import calendarcomponent from './calendar/calendar.js';
 import template from './calendar/calendar.tpl.html';
@@ -36,6 +36,7 @@ import upcomingcomponent from './calendar/upcoming.js';
 import upcomingtemplate from './calendar/upcoming.tpl.html';
 
 import 'fullcalendar/dist/fullcalendar.min.css';
+
 require('fullcalendar');
 import 'angular-ui-calendar';
 

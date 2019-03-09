@@ -104,7 +104,8 @@
                         Add calendar
                     </a>
                     {{$ctrl.selected_calendar}}
-                    <objecteditor eid="calendarEditor" schema="calendar" action="edit" uuid="{{$ctrl.selected_calendar}}"
+                    <objecteditor eid="calendarEditor" schema="calendar" action="edit"
+                                  uuid="{{$ctrl.selected_calendar}}"
                                   ng-if="$ctrl.selected_calendar != null"></objecteditor>
                 </div>
             </uib-tab>

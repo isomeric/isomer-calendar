@@ -95,7 +95,9 @@ class UpcomingCtrl {
                     for (let cal in self.calendars) {
                         self.calendars_enabled.push(cal);
                     }
-                } else { self.calendars_enabled = self.state_calendars.split(',')}
+                } else {
+                    self.calendars_enabled = self.state_calendars.split(',')
+                }
                 console.log('[CALENDAR] Calendars:', self.calendars_enabled);
 
                 if (self.calendars_enabled.length === 0) {
