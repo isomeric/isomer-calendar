@@ -3,7 +3,7 @@
 
 # Isomer Application Framework
 # ============================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -87,12 +87,12 @@ EventSchema['properties'].update({
         "description": "Recurrence rule"
     },
     "category": {"type": "string", "description": "Event category"},
-    #"geo": GeometrySchema
+    # "geo": GeometrySchema
 })
 
 EventForm = [
     fieldset('General', [
-        section(3,2, [
+        section(3, 2, [
             ['name', 'category'],
             ['dtstart', 'dtend'],
             ['duration', 'location']
@@ -103,7 +103,7 @@ EventForm = [
         'recurring'
     ]),
     fieldset('Recurrence', [
-        section(1,2, [
+        section(1, 2, [
             ['rdate', 'rrule']
         ])
     ], options={
