@@ -21,7 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * """
  */
-@import '../../../scss/colors';
+@import '~scss/colors';
 
 .calendar-toggle {
   display: inline-block;
@@ -42,6 +42,7 @@
 .fc-nonbusiness {
   background: $color-primary-1;
 }
+
 .fc-bootstrap3 .fc-time-grid .fc-slats table {
   background: $color-white;
 }
@@ -61,5 +62,5 @@
 
 upcoming > div > div > h3,
 upcoming > div > div > h2 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
